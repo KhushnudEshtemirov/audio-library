@@ -5,7 +5,7 @@ import headphone from "@/assets/images/headphone.png";
 
 export function HeroSection() {
   return (
-    <div className="bg-[#a57eda0e]">
+    <div className="bg-[#a57eda0e] max-[450px]:mt-17.5">
       <div className="container flex p-5 max-[450px]:flex-col-reverse">
         <div className="mobile-hero-text flex-1 flex flex-col gap-8 py-20">
           <h1 className="text-4xl font-bold leading-12">
