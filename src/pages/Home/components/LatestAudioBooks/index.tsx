@@ -54,8 +54,8 @@ const books = [
 export function LatestAudioBooks() {
   return (
     <div className="container py-5">
-      <div className="flex justify-between items-center mb-4">
-        <h2 className="text-2xl font-bold mb-8">Yangi audio kitoblar</h2>
+      <div className="flex justify-between items-center mb-8">
+        <h2 className="text-2xl font-bold">Yangi audio kitoblar</h2>
         <Link
           to="/audio-books"
           className="flex items-center text-[#6243C3] font-medium text-sm"

@@ -13,7 +13,7 @@ export function PlayerSection() {
         <div className="flex flex-col items-start gap-2">
           <h2 className="text-2xl font-bold">Alkimyogar</h2>
           <p className="text-sm font-semibold text-gray-500">Paulo Koelo</p>
-          <div className="flex items-start gap-2 mt-3">
+          <div className="flex gap-2 mt-3">
             <Rate allowHalf defaultValue={4.5} />
             <p className="flex items-center gap-2 ml-2">
               <span className="font-bold">4.5</span>
@@ -27,7 +27,7 @@ export function PlayerSection() {
                 04:12:00
               </span>
             </div>
-            <div className="flex flex-col items-center gap-1 border-l-8 border-gray-200 pl-4">
+            <div className="flex flex-col gap-1 border-l-8 border-gray-200 pl-4">
               <p className="text-sm text-gray-500">Bo'limlar</p>
               <span className="font-semibold text-gray-600 text-sm">20 ta</span>
             </div>
@@ -44,7 +44,7 @@ export function PlayerSection() {
           </button>
         </div>
       </div>
-      <div className="flex-1 flex flex-col gap-5 bg-[#a57eda0e] px-8 py-6 rounded-lg">
+      <div className="flex-1 flex flex-col gap-5 bg-[#a57eda0e] px-8 py-6 rounded-lg shadow-[0_0_14px_rgba(0,0,0,0.1)]">
         <AudioPlayer audioSrc={audio} />
       </div>
     </div>

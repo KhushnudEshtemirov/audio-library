@@ -31,3 +31,18 @@
   margin-inline: auto;
   padding-inline: 1rem;
 }
+
+.headphone-animation {
+  animation: headphone-animation 1.8s ease-in-out infinite;
+}
+
+@keyframes headphone-animation {
+  0%,
+  100% {
+    top: -40px;
+  }
+
+  50% {
+    top: -15px;
+  }
+}

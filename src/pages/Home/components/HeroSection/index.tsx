@@ -1,5 +1,7 @@
-import heroImage from "@/assets/images/2.png";
 import { CiSearch } from "react-icons/ci";
+
+import books from "@/assets/images/books.png";
+import headphone from "@/assets/images/headphone.png";
 
 export function HeroSection() {
   return (
@@ -23,8 +25,13 @@ export function HeroSection() {
             <CiSearch className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-500 text-2xl" />
           </div>
         </div>
-        <div className="flex-1 flex justify-center items-center">
-          <img src={heroImage} alt="Audiobooks" className="w-4/5 h-auto" />
+        <div className="relative flex-1 flex justify-center items-center">
+          {/* <img src={heroImage} alt="Audiobooks" className="w-4/5 h-auto" /> */}
+          <img src={books} alt="" className="w-[85%] absolute" />
+          <img
+            src={headphone}
+            className="headphone-animation w-3/4 absolute left-10"
+          />
         </div>
       </div>
     </div>

@@ -218,13 +218,18 @@ export function AudioPlayer({ audioSrc }: AudioPlayerProps) {
           </button>
           <button
             onClick={togglePlay}
-            className="w-12 h-12 flex items-center justify-center bg-[#6243C3] text-white rounded-full hover:opacity-90 transition-opacity cursor-pointer"
+            className="relative w-12 h-12 flex items-center justify-center bg-[#6243C3] text-white rounded-full hover:opacity-90 transition-opacity cursor-pointer"
           >
-            {isPlaying ? (
-              <IoMdPause className="text-xl" />
-            ) : (
-              <IoMdPlay className="text-xl ml-1" />
+            {!isPlaying && (
+              <span className="absolute inset-0 rounded-full bg-[#6243C3] animate-ping opacity-75" />
             )}
+            <span className="relative z-10">
+              {isPlaying ? (
+                <IoMdPause className="text-xl" />
+              ) : (
+                <IoMdPlay className="text-xl ml-1" />
+              )}
+            </span>
           </button>
           <button
             onClick={() => seekBy(10)}
