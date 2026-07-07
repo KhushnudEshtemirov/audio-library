@@ -4,7 +4,7 @@ import { IoTime } from "react-icons/io5";
 
 export function BookCard({ books }: { books: any }) {
   return (
-    <div className="flex justify-between gap-5">
+    <div className="flex justify-between gap-5 max-[450px]:flex-col">
       {books.map((book: any) => (
         <div
           key={book.id}

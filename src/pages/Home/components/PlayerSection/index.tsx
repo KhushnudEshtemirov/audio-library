@@ -7,9 +7,13 @@ import audio from "@/assets/audios/1.mp3";
 
 export function PlayerSection() {
   return (
-    <div className="container flex gap-10 items-center justify-center py-10">
-      <div className="flex-1 flex items-start gap-10">
-        <img src={book} alt="Book" className="w-56 rounded-lg" />
+    <div className="container flex gap-10 items-center justify-center py-10 max-[450px]:flex-col">
+      <div className="flex-1 flex items-start gap-10 max-[450px]:flex-col">
+        <img
+          src={book}
+          alt="Book"
+          className="w-56 rounded-lg max-[450px]:w-full"
+        />
         <div className="flex flex-col items-start gap-2">
           <h2 className="text-2xl font-bold">Alkimyogar</h2>
           <p className="text-sm font-semibold text-gray-500">Paulo Koelo</p>
@@ -44,7 +48,7 @@ export function PlayerSection() {
           </button>
         </div>
       </div>
-      <div className="flex-1 flex flex-col gap-5 bg-[#a57eda0e] px-8 py-6 rounded-lg shadow-[0_0_14px_rgba(0,0,0,0.1)]">
+      <div className="flex-1 flex flex-col gap-5 bg-[#a57eda0e] px-8 py-6 rounded-lg shadow-[0_0_14px_rgba(0,0,0,0.1)] max-[450px]:w-full">
         <AudioPlayer audioSrc={audio} />
       </div>
     </div>

@@ -194,7 +194,7 @@ export function AudioPlayer({ audioSrc }: AudioPlayerProps) {
           </div>
         </div>
 
-        <div className="flex items-center justify-center gap-6 mt-4">
+        <div className="flex items-center justify-center gap-6 mt-4 max-[450px]:gap-5">
           <button
             onClick={cycleSpeed}
             className="relative text-gray-500 hover:text-[#6243C3] transition-colors cursor-pointer"
@@ -218,17 +218,13 @@ export function AudioPlayer({ audioSrc }: AudioPlayerProps) {
           </button>
           <button
             onClick={togglePlay}
-            className="relative w-12 h-12 flex items-center justify-center bg-[#6243C3] text-white rounded-full hover:opacity-90 transition-opacity cursor-pointer"
+            className="relative w-12 h-12  max-[450px]:w-8 max-[450px]:h-8 flex items-center justify-center bg-[#6243C3] text-white rounded-full hover:opacity-90 transition-opacity cursor-pointer"
           >
             {!isPlaying && (
               <span className="absolute inset-0 rounded-full bg-[#6243C3] animate-ping opacity-75" />
             )}
-            <span className="relative z-10">
-              {isPlaying ? (
-                <IoMdPause className="text-xl" />
-              ) : (
-                <IoMdPlay className="text-xl ml-1" />
-              )}
+            <span className="relative z-10 text-xl  max-[450px]:text-lg">
+              {isPlaying ? <IoMdPause /> : <IoMdPlay className="ml-1" />}
             </span>
           </button>
           <button

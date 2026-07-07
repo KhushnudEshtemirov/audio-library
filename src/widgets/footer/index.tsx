@@ -8,8 +8,8 @@ export function Footer() {
   return (
     <footer className="mt-auto text-white">
       <div className="bg-[#0d0f31] py-8 text-white">
-        <div className="container flex justify-between items-start gap-8">
-          <div>
+        <div className="container flex justify-between items-start gap-8 max-[450px]:flex-col max-[450px]:items-center max-[450px]:text-center">
+          <div className="max-[450px]:flex max-[450px]:flex-col max-[450px]:items-center max-[450px]:border-b max-[450px]:pb-8 max-[450px]:border-[#4b2fa6]">
             <Link to="/" className="flex items-center gap-2 text-lg font-bold">
               <div className="bg-[#6243C3] p-2 rounded-lg text-white">
                 <SiAudiobookshelf />
@@ -33,7 +33,7 @@ export function Footer() {
               </div>
             </div>
           </div>
-          <div>
+          <div className="max-[450px]:w-full max-[450px]:border-b max-[450px]:pb-8 max-[450px]:border-[#4b2fa6]">
             <h3 className="font-bold mb-4">Kategoriyalar</h3>
             <ul className="space-y-2 text-sm">
               <li>
@@ -78,7 +78,7 @@ export function Footer() {
               </li>
             </ul>
           </div>
-          <div>
+          <div className="max-[450px]:w-full max-[450px]:border-b max-[450px]:pb-8 max-[450px]:border-[#4b2fa6]">
             <h3 className="font-bold mb-4">Foydali havolalar</h3>
             <ul className="space-y-2 text-sm">
               <li>
@@ -105,7 +105,7 @@ export function Footer() {
           </div>
           <div>
             <h3 className="font-bold mb-4">Aloqa</h3>
-            <ul className="space-y-2 text-sm">
+            <ul className="space-y-2 text-sm max-[450px]:flex max-[450px]:flex-col max-[450px]:items-center">
               <li>
                 <a
                   href="mailto:info@audiokutubxona.uz"
@@ -127,7 +127,7 @@ export function Footer() {
         </div>
       </div>
       <div className="bg-[#0d0f31e1] py-4">
-        <div className="container flex justify-between items-center">
+        <div className="container flex justify-between items-center gap-4 max-[450px]:flex-col max-[450px]:text-center">
           <p className="text-sm text-gray-500">
             &copy; {new Date().getFullYear()} AudioKutubxona. Barcha huquqlar
             himoyalangan.
