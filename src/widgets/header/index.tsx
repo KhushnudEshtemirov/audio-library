@@ -17,7 +17,7 @@ export function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="container flex items-center gap-10 p-4 font-medium max-[450px]:shadow-md">
+    <div className="container flex items-center gap-10 p-4 font-medium max-[450px]:shadow-md max-[450px]:fixed top-0 left-0 bg-white z-50">
       <Link to="/" className="flex items-center gap-2 text-lg font-bold">
         <div className="bg-[#6243C3] p-2 rounded-lg text-white">
           <SiAudiobookshelf />
